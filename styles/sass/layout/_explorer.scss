@@ -1,0 +1,50 @@
+@import './utils/mixins';
+
+.explorer {
+    text-align:center;
+    & h2 {
+        font-size:2rem;
+    }
+    & p {
+        font-size:1rem;
+    }
+    & button {
+        color:white;
+        font-weight:300;
+        font-size:1.5rem;
+        padding:1rem 2rem;
+        border:none;
+        transition:all 0.3s;
+        @include base-shadow;
+        border-radius:2rem;
+        margin-top:1rem;
+        @include gradient(0.9);
+        &:hover {
+           @include zoom;
+            opacity:0.9;
+        }
+    }
+}
+.loader {
+    display:grid;
+    place-items:center;
+    background-color:#ffffff;
+    opacity:0.9;
+    height:100vh;
+    position:fixed;
+    inset:0;
+    z-index:1;
+   animation:disappear 200ms forwards;
+   animation-delay:3s;
+    transform-origin: top;
+}
+
+
+@keyframes disappear {
+    0% {
+        transform:scale(1);
+    }
+    100% {
+        transform:scale(0);
+    }
+}

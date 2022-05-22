@@ -1,0 +1,53 @@
+@import './utils/mixins';
+@import './utils/variables';
+@import './utils/colors';
+
+
+.tuto {
+    counter-reset:steps;
+    margin-bottom:2rem;
+    ol {
+        display:flex;
+        list-style-type:none;
+        gap:1rem;
+        @media (max-width:1000px){
+            flex-direction:column;
+        }
+    }
+    & li {
+        &::before {
+            content:counter(steps);
+            counter-increment: steps;
+            color:white;
+            background-color:$purple;
+            width:2 * $base-height;
+            height:2* $base-height;
+            display:grid;
+            place-items:center;
+            padding:.5rem;
+            left:-1 * $base-height;
+            top:50%;
+            border-radius:50%;
+            position:absolute;
+            transform:translateY(-50%);
+        }
+        background:#f6f6f6;
+        padding:1rem 2rem;
+        padding:1.5rem 2rem;
+        position:relative;
+        flex-grow:1;
+        border-radius:1rem;
+        @include base-shadow;
+        &:hover {
+            @include zoom;
+        }
+        & i  {
+            margin-right:1rem;
+            color:$lightgrey;
+            font-size:1.5rem;
+        }
+        & .fa-store {
+            color:$purple;
+        }
+    }
+}
