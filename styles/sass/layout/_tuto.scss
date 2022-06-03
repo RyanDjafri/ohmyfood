@@ -4,12 +4,19 @@
 
 
 .tuto {
+    h2 {
+        margin:2rem 1rem;
+    }
     counter-reset:steps;
     margin-bottom:2rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    
     ol {
         display:flex;
+        margin-left:-1rem;
         list-style-type:none;
-        gap:1rem;
+        gap:2rem;
         @media (max-width:1000px){
             flex-direction:column;
         }
@@ -31,13 +38,12 @@
             position:absolute;
             transform:translateY(-50%);
         }
-        background:#f6f6f6;
-        padding:1rem 2rem;
+        background-color:darken($lightergrey,5%);
         padding:1.5rem 2rem;
         position:relative;
         flex-grow:1;
         border-radius:1rem;
-        @include base-shadow;
+        box-shadow:2px 1px 7px -3px #000000;
         &:hover {
             @include zoom;
         }
@@ -51,3 +57,4 @@
         }
     }
 }
+

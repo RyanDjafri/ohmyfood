@@ -1,18 +1,27 @@
 @import './utils/mixins';
+@import './utils/colors';
+@import './utils/variables';
 
 .explorer {
+    @media(max-width:$breakpoint){
+        width:100%;
+    }
+    background-color:darken($lightergrey,5%);
+    padding:3rem;
     text-align:center;
     & h2 {
-        font-size:2rem;
+        font-size:1.5rem;
+        margin-bottom:0.5rem;
     }
     & p {
-        font-size:1rem;
+        font-size:0.9rem;
+        margin-top:0.5rem;
     }
     & button {
         color:white;
         font-weight:300;
-        font-size:1.5rem;
-        padding:1rem 2rem;
+        font-size:1rem;
+      padding:1rem 2rem;
         border:none;
         transition:all 0.3s;
         @include base-shadow;
