@@ -43,7 +43,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1rem;
-  background-color: #dddddd;
+  background-color: #d0d0d0;
   text-align: center;
   padding: 1.5rem;
   margin-top: 0.5rem;
@@ -217,12 +217,12 @@ header {
   color: #9356dc;
 }
 
-#homepage h2 {
+#homepage .menus {
+  background-color: #f6f6f6;
   margin: 2rem 1rem;
 }
 
-#homepage .menus {
-  background-color: #f6f6f6;
+#homepage .menus h2 {
   margin: 2rem 1rem;
 }
 
@@ -345,6 +345,7 @@ header {
 #homepage .menus .card__description h3,
 #homepage .menus .card__description p {
   padding: 0.3rem;
+  margin-left: 1rem;
 }
 
 footer {
@@ -356,7 +357,6 @@ footer {
 footer h2 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 500;
-  padding: 1rem 0;
 }
 
 footer p {

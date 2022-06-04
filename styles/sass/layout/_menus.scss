@@ -3,13 +3,13 @@
 @import "./utils/mixins";
 
 #homepage {
-  h2{
-    margin:2rem 1rem;
-  }
+ 
   .menus {
     background-color: #f6f6f6;
     margin:2rem 1rem;
-
+    h2{
+      margin:2rem 1rem;
+    }
     .menus__cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -51,6 +51,7 @@
         h3,
         p {
           padding: 0.3rem;
+          margin-left:1rem;
         }
       }
     }
