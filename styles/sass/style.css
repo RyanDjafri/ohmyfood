@@ -43,7 +43,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1rem;
-  background-color: #d0d0d0;
+  background-color: #dddddd;
   text-align: center;
   padding: 1.5rem;
   margin-top: 0.5rem;
@@ -215,6 +215,11 @@ header {
 
 .tuto li .fa-store {
   color: #9356dc;
+}
+
+#store:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#f6e0ff), to(#ffe1ea));
+  background: linear-gradient(90deg, #f6e0ff 0%, #ffe1ea 100%);
 }
 
 #homepage .menus {
