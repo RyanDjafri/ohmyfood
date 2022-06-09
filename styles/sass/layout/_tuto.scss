@@ -4,6 +4,7 @@
 
 
 .tuto {
+    margin: 8px;
     h2 {
         margin:2rem 1rem;
     }
@@ -46,19 +47,19 @@
         box-shadow:2px 1px 7px -3px #000000;
         &:hover {
             @include zoom;
+            background-color:#f5edff;
+            & i {
+                color:$purple;
+            }
         }
         & i  {
             margin-right:1rem;
             color:$lightgrey;
             font-size:1.5rem;
-        }
-        & .fa-store {
-            color:$purple;
+           
         }
     }
+   
 }
 
-#store:hover {
-    background: linear-gradient(90deg, rgba(246,224,255,1) 0%, rgba(255,225,234,1) 100%);
 
-}

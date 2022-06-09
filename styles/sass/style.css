@@ -6,6 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 p {
@@ -46,8 +47,6 @@ header {
   background-color: #dddddd;
   text-align: center;
   padding: 1.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
 }
 
 .city i {
@@ -143,6 +142,7 @@ header {
 }
 
 .tuto {
+  margin: 8px;
   counter-reset: steps;
   margin-bottom: 2rem;
   margin-top: 1rem;
@@ -205,21 +205,17 @@ header {
 .tuto li:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+  background-color: #f5edff;
+}
+
+.tuto li:hover i {
+  color: #9356dc;
 }
 
 .tuto li i {
   margin-right: 1rem;
   color: black;
   font-size: 1.5rem;
-}
-
-.tuto li .fa-store {
-  color: #9356dc;
-}
-
-#store:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#f6e0ff), to(#ffe1ea));
-  background: linear-gradient(90deg, #f6e0ff 0%, #ffe1ea 100%);
 }
 
 #homepage .menus {
