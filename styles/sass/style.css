@@ -364,6 +364,10 @@ footer p {
   padding: .2rem;
 }
 
+footer i {
+  margin-right: 1rem;
+}
+
 @-webkit-keyframes appear {
   0% {
     -webkit-transform: translateY(50%);
